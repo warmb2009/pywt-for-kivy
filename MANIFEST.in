@@ -1,0 +1,6 @@
+recursive-include pywt/data *
+recursive-include pywt/_extensions *
+prune pywt/_extensions/back
+prune pywt/_extensions/__pycache__
+prune pywt/libpython2.7.so
+prune pywt/__pycache__
