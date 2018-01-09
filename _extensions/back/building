@@ -1,0 +1,9 @@
+rm ../*.so
+rm -r ./obj
+rm -r ./libs
+export PATH=$PATH:/opt/android-ndk/ 
+ndk-build NDK_APPLICATION_MK=./Application.mk NDK_PROJECT_PATH=.
+cp ./libs/armeabi-v7a/lib_dwt.so ../_dwt.so
+cp ./libs/armeabi-v7a/lib_pywt.so ../_pywt.so
+cp ./libs/armeabi-v7a/lib_cwt.so ../_cwt.so
+cp ./libs/armeabi-v7a/lib_swt.so ../_swt.so
