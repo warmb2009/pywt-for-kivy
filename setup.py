@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-#from setuptools import setup, find_packages
+#from setuptools import setup, find_packages  [setuptools shows error in p4a]
 from distutils.core import setup, Extension
 setup (name = 'pywt',
        version = '0.1',
@@ -14,7 +14,6 @@ setup (name = 'pywt',
            'data' : ['data/*.npy', 'data/*.npz'],
            '_extensions' : ['_extensions/*.so'],
        },
-#       package_dir = {'' : 'pywt'},
-#       data_files = [('data' , ['data/ecg.npy']) ],
+
        zip_safe=True,
 )
